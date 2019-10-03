@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/htin_zoo_atlanta"
+        app:layout_constraintBottom_toTopOf="@+id/tvLocatedIn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textSize="26sp"/>
+    <TextView
+        android:id="@+id/tvLocatedIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_located_in_grant_park"
+        app:layout_constraintBottom_toTopOf="@+id/tvAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_address_800_cherokee_ave_se_atlanta_ga_30315"
+        app:layout_constraintBottom_toTopOf="@+id/tvHours"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocatedIn"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/tvHours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_hours"
+        app:layout_constraintBottom_toTopOf="@+id/btnActivityAnimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/btnActivityAnimal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_our_animals"
+        app:layout_constraintBottom_toTopOf="@+id/tvAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHours"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:textColor="#3F51B5"
+        android:clickable="true"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
